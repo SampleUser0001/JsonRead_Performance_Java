@@ -1,0 +1,2 @@
+# JsonRead_Performance_Java
+Javaでjsonファイルを読み込む。CPU使用率を見たい。
