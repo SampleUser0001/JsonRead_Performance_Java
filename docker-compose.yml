@@ -1,0 +1,11 @@
+version: '3'
+services:
+  maven:
+    image: maven:adoptopenjdk
+    container_name: performance_test
+    volumes:
+      - ./src:/usr/src/mymaven/src
+      - ./target:/usr/src/mymaven/target
+      - ./pom.xml:/usr/src/mymaven/pom.xml
+      - $HOME/.m2:/root/.m2
+    working_dir: /usr/src/mymaven
